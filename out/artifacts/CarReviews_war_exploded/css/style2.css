@@ -1,0 +1,91 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: url("../image/bg3.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bgbox {
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.bgbox .head {
+    font-size: 30px;
+    width: 150px;
+    height: 35px;
+    margin: 30px auto;
+
+}
+
+.bgbox .bg_ft button a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    float: left;
+    width: 500px;
+    height: 475px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.footer img {
+    margin-left: 500px;
+    animation: che1 5s linear 0s infinite normal;
+}
+
+@keyframes che1 {
+    from {
+        margin-left: 500px;
+    }
+    to {
+        margin-left: -160px;
+    }
+
+}
+
+.footer .foot_content {
+    width: 300px;
+    height: 430px;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    padding-top: 60px;
+    padding-left: 50px;
+    margin-bottom: 0;
+}
+
+.footer .foot_content span {
+    font-size: 13px;
+    color: #e82c07;
+}
+
+.footer .foot_content div {
+    margin-bottom: 5px;
+}
+
+.footer .foot_content #ZC {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    width: 100px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 20px;
+}
+

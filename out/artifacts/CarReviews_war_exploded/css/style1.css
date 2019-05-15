@@ -1,0 +1,110 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: url("/image/bg1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bgbox {
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.bgbox .head {
+    font-size: 30px;
+    width: 200px;
+    height: 35px;
+    margin: 30px auto;
+
+}
+
+.bgbox .bg_ft {
+    width: 500px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+
+.bgbox .bg_ft button {
+    width: 100px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 20px;
+}
+
+.bgbox .bg_ft button a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    float: left;
+    width: 500px;
+    height: 380px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.footer img {
+    margin-left: 500px;
+    animation: che1 5s linear 0s infinite normal;
+}
+
+@keyframes che1 {
+    from {
+        margin-left: 500px;
+    }
+    to {
+        margin-left: -160px;
+    }
+
+}
+
+.footer .foot_content {
+    width: 300px;
+    height: 340px;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    padding-top: 60px;
+    margin-bottom: 0;
+}
+
+.footer .foot_contentZH {
+    width: 250px;
+    height: 30px;
+    margin: 50px auto;
+    float: left;
+    font-size: 20px;
+}
+
+.footer .foot_contentPW {
+    width: 250px;
+    height: 30px;
+    margin: 10px auto;
+    float: left;
+    font-size: 20px;
+}
+
+.footer .foot_content .submit {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    width: 100px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 20px;
+}
