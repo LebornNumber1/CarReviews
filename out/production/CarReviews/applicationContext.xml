@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--引入hibernate的相关配置文件-->
+    <import resource="hibernateApplication.xml"/>
+    <!--
+    把Struts2当中的action配置文件中的class放到Spring当中方便管理
+    因为spring当中有AOP功能可是随时增强和面向切面编程
+    这个当中的scope不能使用单例模式必须使用多例prototype
+    -->
+    <!--loginAction-->
+    <bean id="loginAction" class="com.car.web.LoginAction" scope="prototype">
+        <property name="userService" ref="userService"/>
+    </bean>
+    <bean id="userService" class="com.car.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+    <bean id="userDao" class="com.car.dao.impl.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+</beans>
