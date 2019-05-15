@@ -20,7 +20,15 @@
             <result name="bl">/bently.jsp</result>
             <result name="us">/Urus.jsp</result>
             <result name="mre">/martinRE.jsp</result>
-            <allowed-methods>login,reg,ret,reg1,login1,success,play,review,ipa,bl,us,mre</allowed-methods>
+            <result name="wo">/wolf.jsp</result>
+            <result name="glee">/GLE.jsp</result>
+            <result name="AA">/A35.jsp</result>
+            <result name="ES">/ES6.jsp</result>
+            <result name="BEV">/Blevel.jsp</result>
+            <result name="pos">/posche911.jsp</result>
+            <result name="siy">/siyu.jsp</result>
+
+            <allowed-methods>login,reg,ret,reg1,login1,success,play,review,ipa,bl,us,mre,wo,glee,AA,ES,BEV,pos,siy</allowed-methods>
         </action>
     </package>
 </struts>
